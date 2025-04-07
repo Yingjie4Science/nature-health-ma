@@ -1,0 +1,215 @@
+---
+title: "Untitled"
+author: "Yingjie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+
+## Setup 
+
+```{r}
+
+### To clear your environment
+remove(list = ls())
+
+## Load packages
+library(dplyr)
+library(stringr)
+library(metafor)
+library(dmetar)   ## InfluenceAnalysis()
+
+library(ggpubr) # ggboxplot()
+
+
+## Load functions 
+source('./code/func_sensitivity_analysis.R')
+source('./code/func_ggsave.R')
+
+
+dir.fig <- "./figures/"
+
+today <- format(Sys.time(), "%Y%m%d"); today ## "%Y%m%d%H%M"
+```
+
+
+
+
+
+## Load data
+
+```{r}
+
+subgroups <- c(
+  'subgroup_design',
+  'exposure_o2',
+  'nature_type_o2', 
+  'Region',
+  'Season',
+  'density_class',
+  'age_group', 'gender_group', 'duration_group')
+
+
+ind_sub_levels <- c(
+  ## // negative aspect
+  "TMD", 
+  "Anxiety",            # POMS / STAI
+  "Fatigue", "Confusion", "Anger", 
+  "Depression",         # --- POMS
+  "Stress",             # PSS
+  "Negative Affect",    # PANAS
+  
+  ## // positive aspect 
+  "Positive Affect",
+  "Restorative Effect", # ROS
+  "Vigor",              # --- POMS
+  "Vitality"            # SVS
+)
+
+
+
+## save data for RR2
+f <- paste0('./data/data_sens_n1_combined.rds')
+sens_n1_combined <- readRDS(f)
+
+f <- paste0('./data/data_sens_n10_combined.rds')
+sens_n10_combined <- readRDS(f)
+
+```
+
+
+
+## Viz
+
+  * *Leave-one-out analysis* ensures no single study dominates the results.
+  
+  * *Random subset analysis* ensures that findings hold even after removing multiple studies.
+  
+
+```{r - select input data}
+
+## choose a data for next step -----------------------------------------------------------
+sens_data <- sens_n1_combined; sens_lab <- 'ma_sens_n1_subgroup'
+sens_data <- sens_n10_combined; sens_lab <- 'ma_sens_n10_subgroup'
+
+
+sens_data <- sens_data %>%
+  ## remove the subgroup with only one sub-category
+  dplyr::filter(n_subcat > 1) %>%
+  ## change the order of plots
+  dplyr::mutate(ind_sub = factor(ind_sub, levels = ind_sub_levels)) %>%
+  ## clean text
+  dplyr::filter(!subgroup %in% c('Greenspace')) %>%
+  dplyr::filter(!stringr::str_detect(pattern = ";|from window|residential|participatory", string = subgroup)) %>%
+  dplyr::mutate(subgroup = gsub('L4 - | in nature|L5 - nature ', '', subgroup)) %>%
+  as.data.frame()
+
+
+# subgroups <- unique(sens_n1$subgroup)
+subgroups <- unique(sens_data$group_name); subgroups
+
+```
+
+
+
+```{r - n-1 - boxplot}
+
+if (sens_lab == 'ma_sens_n1_subgroup') {
+
+  # Create the histogram with ggplot
+  for (subgroup_select in subgroups) {
+    
+    group_title = str_to_sentence(gsub('_|_o2', ' ', subgroup_select)) %>% trimws()
+  
+    d <- sens_data %>%
+      dplyr::filter(group_name == subgroup_select) 
+    
+    d %>% 
+      ggboxplot(., x = "subgroup", y = "SMD", 
+                fill = '#0d7d87', 
+                # color = 'gray40', 
+                color = NA, 
+                alpha= 0.8,
+                add = "jitter", 
+                add.params = list(shape=1, size=1, color = '#99c6cc', alpha=0.8)
+                ) + # , fill = "subgroup"
+      # geom_vline(xintercept = 0, color = "gray", size = 0.5) +
+      # geom_vline(aes(xintercept = es.mean), color = "red", size = 0.5) +
+      facet_wrap(~ind_sub, 
+                 scales = "free_y",
+                 ncol = 5) + 
+      geom_errorbar(data = d, 
+                    aes(ymin = es.lower, ymax = es.upper), 
+                    width = 0.2, linewidth = 0.15, color = "#ff5a5e", alpha = 0.5) +  # Confidence intervals
+      geom_point(data = d, aes(x = subgroup, y = es.mean), 
+                 color = "#c31e23", size = 2, shape = 18, alpha = 0.5)  + # Red diamonds for mean points
+      labs(
+        title = paste0("Leave-One-Out Sensitivity Analysis - ", group_title),
+        x = "Effect Size (Hedges' g)",
+        y = "Frequency"
+      ) +
+      theme_bw() +
+      theme(
+        # legend.position = "none",
+        #axis.title.y = element_blank(),
+        # axis.text.y = element_blank(),
+        # axis.ticks.y = element_blank(),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        # plot.margin = margin(t = 5, r = 5, b = 5, l = 5, "points"),
+        ) +
+      theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1)) 
+    
+    fname <- paste0(dir.fig, paste(sens_lab, subgroup_select, 'boxp', today, sep = '_'), '.png'); print(fname)
+    func_ggsave(fname, w = 7, h = 5, save_png = T)
+    
+  }
+} 
+
+```
+
+
+
+
+
+
+
+```{r - Random subset - histgram}
+
+if (sens_lab == 'ma_sens_n10_subgroup') {
+  
+  # Create the histogram with ggplot
+  for (subgroup_select in subgroups) {
+    
+    group_title = str_to_sentence(gsub('_|_o2', ' ', subgroup_select)) %>% trimws()
+  
+    sens_data %>%
+      dplyr::filter(group_name == subgroup_select) %>%
+      ggplot(., aes(x = SMD)) +
+      geom_histogram(binwidth = 0.02, fill = "#1a80bb", color = "gray", linewidth = 0.01, alpha = 0.7) +
+      geom_vline(xintercept = 0, color = "gray", linewidth = 0.5) +
+      geom_vline(aes(xintercept = es.mean), color = "red", linewidth = 0.5) +
+      facet_grid(ind_sub~subgroup, scales = 'free') + 
+      labs(
+        title = paste0("Distribution of Effect Sizes (random subset) - ", group_title),
+        x = "Effect Size (Hedges' g)",
+        y = "Frequency"
+      ) +
+      theme_bw() +
+      theme(axis.title.y = element_blank(),
+            axis.text.y = element_blank(),
+            axis.ticks.y = element_blank(),
+            panel.grid.major = element_blank(),
+            panel.grid.minor = element_blank(),
+            # plot.margin = margin(t = 5, r = 5, b = 5, l = 5, "points"),
+            )
+    
+    fname <- paste0(dir.fig, paste(sens_lab, subgroup_select, 'hist', today, sep = '_'), '.png'); print(fname)
+    func_ggsave(fname, w = 6, h = 13, save_png = T)
+    
+  }
+}
+
+```
+

@@ -1,0 +1,130 @@
+---
+title: "mini-review"
+author: "Yingjie"
+date: "2023-03-05"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+## Setup
+
+```{r include=FALSE}
+
+## To clear your environment
+remove(list = ls())
+
+library(dplyr)
+library(ggplot2)
+
+```
+
+
+## Indicator
+
+```{r - load data}
+
+f <- paste0('./data/data_dt.ind.cl.rds')
+dt.ind.cl <- readRDS(f)
+
+dt.ind.clean <- dt.ind.cl %>% 
+  group_by(Indicator) %>%
+  dplyr::summarise_at(c("n"), sum, na.rm = T) %>%
+  as.data.frame()
+
+```
+
+
+
+```{r - bar plot}
+
+dt.ind.clean %>%
+  dplyr::slice_max(order_by = n, n = 20) %>%
+  ggplot(aes(
+    x = reorder(Indicator, n),
+    y = n,
+  )) +
+  geom_col() +
+  geom_text(
+    aes(label = n), vjust = 0.5, hjust = 1.1, color = 'white', size = 3) +
+  coord_flip() +
+  xlab("") +
+  ggtitle("Top 20 MH indicators") +
+  theme_bw() +
+  theme(
+    plot.title = element_text(size = 12, hjust = 1, face = 'bold'),
+    axis.text = element_text(size = 11),
+    )
+
+```
+
+
+
+## Tool
+
+```{r - load data}
+
+## load data 
+f <- paste0('./data/data_dt.tool.expand.rds')
+dt.tool.expand <- readRDS(f)
+
+
+dt.tool.clean <- dt.tool.expand %>%
+  group_by(Tool) %>%
+  tally() %>%
+  ungroup() %>%
+  arrange(Tool) %>%
+  as.data.frame()
+
+
+dt.tool.design_clean <- dt.tool.expand %>%
+  group_by(Tool, `study_design`) %>%
+  dplyr::mutate(`study_design` = factor(`study_design`, levels = c('Observational', 'Experimental'))) %>%
+  tally() %>%
+  ungroup() %>%
+  arrange(Tool) %>%
+  group_by(Tool) %>% 
+  dplyr::mutate(Tool_sum = sum(n, na.rm = T) ) %>%
+  as.data.frame()
+
+```
+
+
+
+```{r - bar plot}
+
+## include the top 20 most used tools in plot and analysis -------------------------------
+top_n_select <- dt.tool.design_clean %>%
+  dplyr::distinct(Tool, .keep_all = T) %>%
+  dplyr::slice_max(order_by = Tool_sum, n = 20, with_ties = T) %>%
+  as.data.frame()
+  
+## plot
+dt.tool.design_clean %>%
+  dplyr::filter(Tool %in% unique(top_n_select$Tool)) %>%
+  
+  ggplot(., aes(
+    x = reorder(eval(parse(text = 'Tool')), Tool_sum),
+    y = n,
+    fill = `study_design`)) + 
+  geom_bar(stat = "identity", alpha = 0.7, show.legend = T) +
+  scale_fill_grey(start = 0.5, end = 0.2) +
+  coord_flip() +
+  
+  geom_text(aes(label = n), 
+            # vjust = 0.5, hjust = 0, 
+            position=position_stack(vjust=0.5), color = 'white', size = 3) +
+  # geom_text(aes(y = Tool_sum, group = Tool, label = stat(y)), vjust = 0.5, hjust =-0.5, size = 3) +
+  ggtitle("Top 20 MH measurement tools") +
+  xlab("") +
+  theme_bw() +
+  guides(fill=guide_legend(title="Study design")) +
+  theme(
+    legend.position = c(0.7, 0.15),
+    plot.title = element_text(size = 12, hjust = 1, face = 'bold'), 
+    plot.title.position = "plot", #NEW parameter. Apply for subtitle too.
+    axis.text = element_text(size = 11),
+    )
+
+```

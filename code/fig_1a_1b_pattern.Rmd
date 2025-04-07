@@ -1,0 +1,185 @@
+---
+title: "mini-review"
+author: "Yingjie"
+date: "2023-03-05"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+  This script is used to generate Fig. 1a and Fig.1b. 
+  
+## Load data
+
+```{r include=FALSE}
+
+# To clear your environment 
+remove(list = ls())
+
+## Load packages and customized functions 
+source('./code/func_plot_alluvial.R')
+
+library(readr)
+library(sf)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(cowplot)
+library(ggalluvial)
+library(ggrepel)
+
+```
+
+
+
+## Fig 1a 
+
+  The number of included studies by year. 
+  
+```{r - line plot - count by year}
+
+## load data 
+f <- paste0('./data/data_pub_byYear.rds'); f
+pub_byYear <- readRDS(f)
+
+
+yr_min = min(pub_byYear$Year_pub, na.rm = T)
+yr_max = max(pub_byYear$Year_pub, na.rm = T)
+
+
+pub_byYear_p <- pub_byYear %>%
+  ggplot(aes(x = Year_pub, 
+             y = n,
+             )) +
+  geom_line(data = . %>% dplyr::filter(Year_pub < 2023), color = 'gray', linewidth =1
+            )+
+  geom_point() +
+  geom_text(data = . %>% dplyr::filter(Year_pub < 2021), 
+            aes(label = n), vjust = -0.5, hjust = 0.5, size = 3, color = 'gray20') +
+  geom_text(data = . %>% dplyr::filter(Year_pub >= 2021), 
+            aes(label = n), vjust = 0.5, hjust = -0.5, size = 3, color = 'gray20') +
+  scale_x_continuous(breaks = c(seq(yr_min, yr_max, by=5), 2023)) +
+  scale_y_continuous(position = "right") +
+  xlab('Year')+
+  ylab('Number of publications per year')+
+  theme_bw() +
+  theme(panel.grid = element_blank())
+pub_byYear_p
+
+```
+
+
+```{r - map plot}
+
+## load data 
+f <- paste0('./data/data_count_by_region.rds'); f
+region_count <- readRDS(f)
+
+f <- paste0('./data/data_count_by_region_sf.rds'); f
+region_count_sf <- readRDS(f)
+
+f <- paste0('./data/data_count_by_city.rds'); f
+dt_city_count <- readRDS(f)
+
+
+count_region_max <- max(region_count$n, na.rm = T); count_region_max
+count_city_max <- max(dt_city_count$count, na.rm = T); count_city_max
+count_city_limits <- quantile(dt_city_count$count, c(0,1), na.rm = T)
+
+
+## plot 
+pub_byregion_map <- region_count_sf %>%
+  dplyr::filter(name != 'Antarctica') %>%
+  ggplot(.) +
+  geom_sf(aes(fill = n), size = 0.05, color = 'gray80') +
+  # geom_sf_text(aes(label = iso_a3), colour = "gray", size =1) + 
+  scale_fill_distiller(name= 'Number \nof papers\nby country', palette = 'YlGnBu', type = 'seq', direction = 1, na.value = "gray90") +
+  
+  geom_point(data = dt_city_count, 
+             aes(x = lon, y = lat, 
+                 # color = count, 
+                 size = count), color = 'red', shape = 1, alpha = 0.35) +
+  scale_size_continuous(name = 'Number \nof papers\nby city', range = c(0.8, 3), limits = , breaks = c(1, 2, 4, 8, count_city_max)) +
+  theme_nothing() +
+  theme(legend.position = c(0.1, 0.1), 
+        legend.box = "horizontal") 
+
+# pub_byregion_map
+```
+
+
+```{r - Combined plot}
+w_map <- 1.2
+plot.with.inset <-
+  ggdraw() +
+  draw_plot(pub_byYear_p) +
+  draw_plot(pub_byregion_map + theme(legend.text  = element_text(size = 6),
+                                     legend.title = element_text(size = 7),
+                                     legend.position = c(0.15, 0.15),
+                                     legend.key.size = unit(0.7, "lines")), 
+            x = -0.25, y = .35, width = w_map, height = w_map/2) +
+  draw_label("", x = 0.02, y=0.95, fontface = 'bold')
+
+plot.with.inset
+```
+
+
+
+
+
+## Fig 1b
+
+```{r - tool + ind + region}
+
+## load data
+f <- paste0('./data/data_dt.ind.tool.region.rds'); f
+dt.ind.tool.region <- readRDS(f)
+
+
+## - prep input for `ggalluvial` ---------------------------------------------------------
+dimension_levels = c('Indicator', 'Tool', 'Region')
+dimension_levels = c('Tool', 'Indicator', 'Region')
+dimension_labels = c('MH Tools', 'MH Indicators', 'Region')
+
+
+## format data 
+dtt  <- dt.ind.tool.region  %>%  
+  ## count indicator by region 
+  group_by(Region, Indicator, Tool) %>%
+  dplyr::mutate(n_ind_byregion = sum(n, na.rm = T)) %>%
+  ungroup() %>%
+  ## remove small samples
+  dplyr::filter(n_ind_byregion > 2) %>%
+  ##
+  pivot_longer(names_to = 'dimension', 
+               values_to = 'layers', 
+               cols = c('Indicator', 'Tool', 'Region')) %>%
+  group_by(dimension) %>%
+  dplyr::mutate(id_within_layers = row_number(dimension)) %>%
+  arrange(dimension) %>%
+  dplyr::rename(freq = n) %>%
+  dplyr::mutate(
+    dimension = factor(dimension, levels = dimension_levels, labels = dimension_labels),
+    ) %>%
+  group_by(layers) %>%
+  dplyr::mutate(total = sum(freq, na.rm = T)) %>%
+  ungroup() %>%
+  as.data.frame()
+
+indicator_n_min <- 5 
+
+## Plot the mapping between mh tools, indicators, and regions
+func_alluvial(data = dtt, 
+              indicator_n_min = 3, ## only map indicators with at least three studies 
+              labele_small = 20, 
+              add_flow_label = F, 
+              show_y_ticks = T,
+              w_p = 10, 
+              save_png = F) 
+
+```
+
+
+
+
+

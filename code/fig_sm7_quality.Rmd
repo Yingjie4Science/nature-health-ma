@@ -1,0 +1,69 @@
+---
+title: "Untitled"
+author: "Yingjie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r include=FALSE}
+
+### To clear your environment
+remove(list = ls())
+
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+```
+
+
+## Data
+
+```{r - load data}
+
+f <- './data/data_qa_exp_data.rds'; f
+qa_exp_data <- readRDS(f)
+
+f <- './data/data_qa_rct_data.rds'; f
+qa_rct_data <- readRDS(f)
+
+```
+
+
+```{r - plot function}
+
+func_plot_qa <- function(data) {
+  p <- data %>%
+    group_by(Items) %>%
+    dplyr::mutate(Percent = n / sum(n, na.rm = T),
+                  Label = scales::percent(Percent)) %>%
+    ungroup() %>%
+    ggplot(., aes(fill=rate, y=Percent, x=Items)) + 
+    # Stacked + percent
+    geom_bar(position="fill", stat="identity") +
+    geom_text(aes(label = Label), position = position_stack(vjust = 0.5), size =2) +
+    scale_y_continuous(labels = scales::percent_format()) +
+    labs(fill='Risk of Bias') +
+    coord_flip() +
+    theme_minimal() +
+    theme(axis.title = element_blank())  # Remove the x-axis title
+  return(p)
+}
+
+```
+
+
+
+```{r - plot}
+
+qa_rct <- qa_rct_data %>%
+  tidyr::pivot_longer(cols = 5:ncol(.), names_to = 'Items') %>%
+  dplyr::mutate(rate = gsub(' of bias', '', value),
+                rate = stringr::str_squish(rate)) %>%
+  group_by(Items, rate) %>%
+  tally()
+
+func_plot_qa(data = qa_rct)
+
+```
+

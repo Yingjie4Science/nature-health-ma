@@ -1,0 +1,93 @@
+---
+title: "Untitled"
+author: "Yingjie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+## Set up
+
+```{r include=FALSE}
+
+# To clear your environment 
+remove(list = ls())
+
+# Load packages
+library(dplyr)
+library(ggplot2)
+
+```
+
+
+
+## Load trim and filled MA results
+
+```{r}
+
+# 1. original es
+f <- './data/data_ma_result_all.RDS'
+ma_result_all <- readRDS(file = f) %>%
+  select(-design) %>%
+  dplyr::filter(subgroup == 'Overall') 
+
+
+# 2. filled results
+f <- './data/data_ma_result_all_filled.RDS'
+ma_result_all_filled <- readRDS(file = f) %>%
+  ## remove this first -- testing
+  dplyr::filter(!tool %in% c('DASS-21')) %>%
+  dplyr::filter(subgroup == 'Overall') 
+
+
+ma_result_all$version <- 'original'
+ma_result_all_filled$version <- 'trimfill'
+```
+
+
+## Viz and compare original vs. trim-filled ES
+
+```{r}
+
+ma_result_compare <- rbind(
+  ma_result_all,
+  ma_result_all_filled
+) %>%
+  mutate(tool_ind = paste(ind_sub, tool, sep = ' - '))
+
+
+## plot
+
+dodge_value <- 0.9
+text_size = 12
+xlab_name = "Effect Size"
+
+ma_result_compare %>%
+  
+  ggplot(
+    aes(x = es.mean, 
+        y = ind_sub,
+        color = version)) +
+  geom_point(size = 2, position = position_dodge(dodge_value), show.legend = F) +
+  geom_errorbarh(aes(xmin = es.lower, xmax = es.upper), 
+                 height = 0.15, position=position_dodge(width = dodge_value), show.legend = T) +
+  geom_vline(xintercept = 0, linewidth = 0.6, color = 'red', alpha = 0.3) + 
+  facet_wrap(~tool_ind, scales = "free_y", ncol = 5) +
+  ## p value label
+  geom_text(aes(x = es.mean, label = p.star), vjust = 0.1, size = text_size/4, 
+            position=position_dodge(dodge_value), show.legend = F) +
+  ## es label
+  geom_text(aes(x = es.mean, label = round(es.mean, digits = 2)), 
+                vjust = 1.7, size = text_size/4, 
+                position=position_dodge(dodge_value), show.legend = F) +
+  labs(title = "", x = xlab_name, y = "") +
+  scale_color_brewer(name = '', type = 'qual', palette = 'Dark2') +  ## Colorblind Friendly
+  theme_bw() +
+  theme(legend.position = c(0.8, 0.1),
+        strip.text = element_text(size = 7), 
+        panel.grid.minor = element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+```
+

@@ -1,0 +1,203 @@
+---
+title: "Untitled"
+author: "Yingjie"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+
+```{r include=FALSE}
+
+## To clear your environment
+remove(list = ls())
+
+library(dplyr)
+library(tidyr)
+
+library(meta)
+
+library(cowplot)
+library(rcartocolor)
+library(RColorBrewer)
+
+
+source('./code/func_plot_ma.R')
+source('./code/func_color_bygroup.R')
+
+dir.fig <- "./figures/"
+
+if (!dir.exists(dir.fig)) {dir.create(dir.fig, recursive = TRUE) }
+
+##' an extra post fix for figure's version control
+vv <- ""
+today <- format(Sys.time(), "%Y%m%d")
+```
+
+
+
+### Plot overall effect
+
+
+
+```{r - load data}
+
+
+mh_tool_exp <- c('PANAS', 'POMS', 'ROS', 'STAI', 'SVS', 'PSS')
+
+mh_tool_list <- c(mh_tool_exp);              design <- 'exp_obs'
+
+f <- './data/data_ma_result_all.RDS'
+ma_result_all <- readRDS(f)
+```
+
+
+```{r - plot - overall}
+
+data <- ma_result_all 
+
+data <- data %>%
+  dplyr::filter(subgroup == 'Overall') 
+x_limit_max <- max(abs(data$es.lower), abs(data$es.upper), na.rm = T) * 1.2
+x_limit_max
+
+p <- data %>%
+  plot_effect_size_overall(data = ., 
+                           color_var = 'tool', 
+                           legend_title = 'MH Tools',
+                           text_size = 11,
+                           add_gradient_bg = T,
+                           show_legend = T) +
+  theme(legend.position = c(0.9, 0.9),
+        legend.spacing.y = unit(2, 'cm'),
+        legend.spacing.x = unit(0.2, 'cm'),
+        legend.key.size = unit(0.2, 'cm'),
+        plot.margin = margin(t=0, r=0, b=0, l=0, "pt")) 
+
+
+n_ind <- length(unique(data$ind_sub)); 
+
+
+## add hline to seperate postive vs negative indicators
+p <- p +
+    annotate("segment", x = -x_limit_max, xend = x_limit_max, y = 4.5, 
+             # colour = "gray70", 
+             colour = NA, 
+             size = 0.5)
+hh <- 5.5/2/6*n_ind + 1.5
+
+
+p
+fname <- paste0(dir.fig, 'es_comb_', design, '_', today, vv, '.png'); fname
+func_ggsave(fname, w = 6, h = hh, dpi = 500, save_png = T)
+```
+
+
+
+
+### Plot subgroup analysis
+
+```{r - load data}
+
+## load data
+f <- './data/data_ma_result_all_sub.RDS'
+data <- readRDS(f)
+
+subgroups <- c(
+  'subgroup_design', 'exposure_o2',
+  'nature_type_o2',
+  'Region',
+  'Season',
+  'density_class',
+  'age_group', 'gender_group', 'duration_group') %>%  sort()
+
+
+## indicators to be included in the combined sub-group analysis plots
+
+ind_sub_levels <- c(
+  ## // negative aspect
+  "TMD", 
+  "Anxiety",            # POMS / STAI
+  "Fatigue", "Confusion", "Anger", 
+  "Depression",         # --- POMS
+  "Stress",             # PSS
+  "Negative Affect",    # PANAS
+  
+  ## // positive aspect 
+  "Positive Affect",
+  "Restorative Effect", # ROS
+  "Vigor",              # --- POMS
+  "Vitality"            # SVS
+)
+
+
+##' to decide how many columns we need for facet plots
+##'   if # of indicators < 12, ncol = 4; 
+##'   if # of indicators >= 12, ncol = 5
+facet_ncol <- ifelse(length(ind_sub_levels) < 12, 4, 5)
+
+```
+
+
+```{r - loop plot}
+
+for (subgroup_select in subgroups) {
+  
+  ## subset data
+  ma_result_all_sub <- data %>%
+    dplyr::filter(subgroup != 'Overall', 
+                  group_name == subgroup_select) %>%
+    dplyr::filter(ind_sub %in% ind_sub_levels)
+  
+  ## postfix to be added to figure names
+  postfix_group <- paste0("_subgroup_", subgroup_select); postfix_group
+  
+  ##' decide color scheme 
+  if(subgroup_select == 'nature_type_o2'){
+    group_title = str_to_sentence(gsub('_|_o2', ' ', subgroup_select)) %>% trimws()
+    color_bygroup = nature_type_color; 
+    group_list = nature_type_list
+  } else if(subgroup_select == 'age_group'){
+    group_title = str_to_sentence(gsub('_', ' ', subgroup_select))
+    color_bygroup = age_group_color; 
+    group_list = age_group_list
+  } else if(subgroup_select == 'density_class'){
+    group_title = 'Urban density'
+    main_cat = c('Low density', 'Medium density', 'High density')
+    mixed_cat = unique(ma_result_all_sub$subgroup) %>% sort()
+    group_list = c(main_cat, unique(mixed_cat[!(mixed_cat %in% main_cat)]))
+    color_bygroup = func_color_bygroup(df = ma_result_all_sub, column_name = 'subgroup') 
+  } else if(subgroup_select == 'gender_group'){
+    group_title = str_to_sentence(gsub('_', ' ', subgroup_select))
+    color_bygroup = gender_group_color; 
+    group_list = gender_group_list
+  } else if(subgroup_select == 'duration_group'){
+    group_title = 'Duration in nature (minutes)'
+    color_bygroup = duration_group_color; 
+    group_list = duration_group_list
+  } else if(subgroup_select == 'Season'){
+    group_title = str_to_sentence(gsub('_|_o2', ' ', subgroup_select)) %>% trimws()
+    main_seasons = c('Spring', 'Summer', 'Fall', 'Winter')
+    mixed_season = unique(ma_result_all_sub$subgroup) %>% sort()
+    group_list = c(main_seasons, unique(mixed_season[!(mixed_season %in% main_seasons)]))
+    color_bygroup = func_color_bygroup(df = ma_result_all_sub, column_name = 'subgroup') 
+  } else if(subgroup_select == 'Region'){
+    group_title = subgroup_select
+    color_bygroup = region_color; 
+    group_list = region_list
+  } else {
+    # next
+    group_title = str_to_sentence(gsub('_|_o2', ' ', subgroup_select)) %>% trimws()
+    group_list = unique(ma_result_all_sub$subgroup) %>% sort()
+    color_bygroup = func_color_bygroup(df = ma_result_all_sub, column_name = 'subgroup')
+  }
+  
+
+  ##' run sourced code 
+  ##' 2. pool all tools together and plot
+  source('./code/020s2_subgroup_loop_source_code.R')
+  
+}
+
+
+```
