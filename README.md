@@ -42,20 +42,20 @@ library(RColorBrewer)
 
 ```
 ├── data/
-│   ├── included_papers_for_systematic_review.csv    # metadata for all 466 papers reviewed
-│   ├── included_papers_for_MA.csv                   # metadata for 78 papers used in meta-analysis
-│   └── data_*.rds                                   # various files used in final figures
+│   ├── included_papers_for_systematic_review_SM.csv   # metadata for all 449 papers reviewed
+│   ├── included_papers_for_MA_SM.csv                  # metadata for 78 papers used in meta-analysis
+│   └── data_*.rds                                     # various data files used in generating final figures
 │
 ├── code/
-│   ├── fig_1a_1b_pattern.Rmd                        # Code for Fig. 1 (study distribution & tools)
-│   ├── fig_2_3_effect_size.Rmd                      # Code for Fig. 2 and 3 (effect sizes)
-│   ├── fig_ex1a_ex1b_tool_indicator.Rmd             # Extended Data Fig. 1
-│   ├── fig_ex2_ex3_sm4_sig.Rmd                      # Extended Data Figs. 2–3 and Suppl. Fig. 4
-│   ├── fig_sm2_publication_bias.Rmd                 # Funnel plot analysis
-│   ├── fig_sm3_trim_fill.Rmd                        # Trim-and-fill publication bias analysis
-│   ├── fig_sm5_sm6_sensitivity.Rmd                  # Random subset and leave-one-out sensitivity analysis
-│   ├── fig_sm7_quality.Rmd                          # Quality assessment visualizations
-│   └── func_*.R                                     # Various data processing functions
+│   ├── fig_1a_1b_pattern.Rmd                          # Code for Fig. 1 (study distribution & tools)
+│   ├── fig_2_3_effect_size.Rmd                        # Code for Fig. 2 and 3 (effect sizes)
+│   ├── fig_ex1a_ex1b_tool_indicator.Rmd               # Extended Data Fig. 1
+│   ├── fig_ex2_ex3_sm4_sig.Rmd                        # Extended Data Figs. 2–3 and Suppl. Fig. 4
+│   ├── fig_sm2_publication_bias.Rmd                   # Funnel plot analysis
+│   ├── fig_sm3_trim_fill.Rmd                          # Trim-and-fill publication bias analysis
+│   ├── fig_sm5_sm6_sensitivity.Rmd                    # Random subset and leave-one-out sensitivity analysis
+│   ├── fig_sm7_quality.Rmd                            # Quality assessment visualizations
+│   └── func_*.R                                       # Various data processing functions
 │      
 
 ```
