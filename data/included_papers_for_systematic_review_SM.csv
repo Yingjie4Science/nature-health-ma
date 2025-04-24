@@ -1,0 +1,450 @@
+id,author,doi,country,tools,indicators
+1933,Watson 2020,10.1016/j.healthplace.2020.102381,"Spain, Netherlands, Lithuania, United Kingdom",4DSQ,Mental distress
+568,MRCCFAS 2015,10.1136/bmjopen-2015-007936,UK,AGECAT,Anxiety; Depression
+3334,Stevenson 2019,10.3389/fpsyg.2019.00042,Denmark,ANT; PRS-C II,Cognitive functioning; Restorative effect
+3659,Houlden 2019,10.1016/j.apgeog.2019.102036,UK,APS,Happiness; Life satisfaction; Worth
+302,Wood 2018,10.3389/fpsyg.2018.02320,UK,ART,Restorative effect
+56,Gidlow 2016,10.1016/j.landurbplan.2016.02.002,UK,Antidepressant Rx,Depression
+522,Taylor 2015,10.1016/j.landurbplan.2014.12.005,UK,Antidepressant Rx,Depression
+607,Helbich 2018,10.1016/j.envres.2018.06.010,Netherlands,Antidepressant Rx,Psychotic disorders
+2442,Tarkiainen 2021,10.1136/jech-2020-214276,Italy; Sweden; Finland,Antidepressant Rx,Depression
+170,Marselle 2020,10.1038/s41598-020-79924-5,Germany,Antidepressant prescription,Depression
+361,McDougall 2021,10.1016/j.landurbplan.2021.104132,Scotland,Antidepressant prescription,Depression
+960,Gonzales-Inca 2022,10.1016/j.healthplace.2022.102760,Finland,BDI; Diagnosis,Depression
+3122,Jones 2021,10.1016/j.landurbplan.2021.104061,UK,BMS; Backward Digit Span; ROS,Cognitive functioning; Mood; Restorative effect
+2381,Jones 2021,10.1016/j.forpol.2021.102408,United States,BRFSS,Life satisfaction
+529,Liao 2019,10.1016/j.envint.2019.03.070,China,Bayley scale of Infant Development,mental development index; psychomotor development index
+886,VanHerzele 2012,10.1007/s11111-011-0153-1,Belgium,Belgian Health Interview Survey,Mental wellbeing ; Happiness
+523,Liao 2020,10.1093/ije/dyz243,China,CBCL,Anxiety; Depression; social withdrawal; immature behavior; somatic complaints; sex problems; splitting behavior; aggressive behavior; delinquent behavior; hyperactivity/inattention; social problems; compulsivity; cruel behavior
+2370,Lee 2019,10.1016/j.scitotenv.2019.03.454,South Korea,CBCL,neurobehavioral health
+944,Jarvis 2020,10.1016/j.envres.2020.109614,Canada,CCHS,Mental wellbeing ; Psychotic disorders
+2667,Crouse 2021,10.1016/j.envres.2020.110267,Canada,CCHS; K10,Mental wellbeing ; Mental distress; Stress
+145,Zhou 2022,10.3390/ijerph19020717,China,CES-D10,Depression
+698,Cottagiri 2022,10.1016/j.envres.2021.112587,Canada,CES-D10,Depression
+825,Bojorquez 2018,10.1177/0020764018795198,Mexico,CES-D10,Depression
+2014,Reklaitiene 2014,10.1177/1403494814544494,Lithuania,CES-D10,Depression
+2076,Koohsari 2018,10.1016/j.cities.2017.11.011,Australia,CES-D10,Depression
+2587,Bezold 2018,10.1016/j.annepidem.2018.01.009,United States,CES-D10,Depression
+2557,Djeudeu 2020,10.1016/j.sste.2020.100340,Germany,CES-D15,Depression
+575,Song 2019,10.3390/ijerph16020173,South Korea,CES-D20,Depression
+813,Liu 2019,10.1016/j.healthplace.2019.102168,China,CES-D20,Depression
+848,Miles 2012,10.1007/s11524-011-9621-2,United States,CES-D20,Depression
+3089,Tomita 2017,10.1016/s2542-5196(17)30063-3,South Africa,CES-D20,Depression
+2145,Bustamante 2022,10.1016/j.healthplace.2022.102813,United States,CES-D; BAI; UCLA loneliness scale,Anxiety; Depression; Loneliness
+798,Cheng 2020,10.1080/14765284.2020.1798639,China,CFPS question,Happiness
+2350,Trkulja 2021,10.1177/19375867211007941,Serbia,CGI,Mental disorder
+47,Lee 2019,10.3390/ijerph16050789,South Korea,CHS,Depression; Stress
+2295,Dolling 2017,10.1016/j.ufug.2017.07.006,Sweden,CIS; PSQ; SCQ; SMBQ; SF-36,Mental wellbeing ; Self-esteem; Stress; Fatigue; Burnout
+431,Huynh 2013,10.1186/1471-2458-13-407,Canada,CL,Emotional wellbeing
+868,Wortzel 2021,10.3389/frsc.2021.686159,United States,COVID-19-Related Worries; GAD-7; PHQ; CMHS,Anxiety; Depression; worry; mental health
+3292,Mueller 2020,10.1016/j.jenvp.2020.101472,UK,CSBQ,independence; emotional dysregulation
+2621,Oomen-Welke 2022,10.3390/ijerph192215322,Germany,CSP-14; POMS,Anxiety; Depression; Emotional wellbeing; Fatigue; Vigor; Hostility; TMD
+2271,Choi 2022,10.18502/ijph.v51i9.10557,South Korea,Community Health Survey,Depression; Stress
+385,Beyer 2014,10.3390/ijerph110303453,United States,DASS,Anxiety; Depression; Stress
+171,Rajoo 2021,10.1016/j.ufug.2021.127340,Malaysia,DASS-21,Anxiety; Depression; Stress
+185,Krols 2022,10.1016/j.landurbplan.2022.104414,Beigium,DASS-21,Depression; Stress
+201,Marques 2021,10.1016/j.ufug.2021.127268,Brazil,DASS-21,mental distress
+493,Song 2022,10.3390/su142114095,China,DASS-21,Affect; Depression; Stress
+679,Oh 2021,10.3390/ijerph181910149,Singapore,DASS-21,Anxiety; Depression; Stress
+734,Vujcic 2018,10.1016/j.forpol.2018.08.006,Serbia,DASS-21,Anxiety; Depression; Stress
+2025,Dean 2018,10.3390/ijerph15071371,Australia,DASS-21,Anxiety; Depression; Stress
+2147,Cox 2018,10.1016/j.landurbplan.2018.07.013,UK,DASS-21,Mental wellbeing ; Depression
+2481,Cox 2017,10.3390/ijerph14020172,UK,DASS-21,Mental wellbeing ; Depression
+3414,Basu 2021,10.1088/2515-7620/ac2ab2,India,DASS-21,Anxiety; Depression; Stress; the mean score of DASS-21
+472,Raman 2021,10.3390/su13158597,Malaysia,DASS-21; POMS; PANAS; ROS,Affect; Anxiety; Depression; Mood; Restorative effect; Stress
+2763,Yeung 2022,10.3390/su14137828,China,DASS-21; PSS; RRS; AMT; APNI; SRIS,Anxiety; Cognitive functioning; Depression; Stress; rumination
+4255,Ameli 2021,10.7717/peerj.10519,United States,DT; MAAS,Mental distress; mindfulness
+3811,Ambrose 2023,10.1016/j.landurbplan.2022.104593,United States,Day Reconstruction Method,Emotional wellbeing
+55,Engemann 2020,10.1016/j.envres.2020.109788,Denmark,Diagnosis,Psychotic disorders
+110,Yoo 2022,10.1016/j.envres.2021.112292,United States,Diagnosis,Mental disorder
+270,Kristine 2018,10.1016/j.schres.2018.03.026,Denmark,Diagnosis,Psychotic disorders
+435,Gascon 2018,10.1016/j.envres.2018.01.012,Spain,Diagnosis,Anxiety; Depression
+501,Engemann 2020,10.1016/j.schres.2019.10.012,Denmark,Diagnosis,Psychotic disorders
+552,Mears 2020,10.1016/j.healthplace.2020.102284,UK,Diagnosis,Mental disorder; Depression
+625,Cruz 2022,10.1371/journal.pmed.1004043,UK,Diagnosis,Mental disorder
+814,Orstad 2020,10.3390/ijerph17134885,United States,Diagnosis,Mental distress
+950,Thygesen 2020,10.1289/ehp6729,Denmark,Diagnosis,Psychotic disorders
+1906,Yuchi 2022,10.1016/j.envint.2022.107120,Canada,Diagnosis,ADHD
+2090,Georgiou 2022,10.1038/s41598-022-17089-z,UK,Diagnosis,Psychotic disorders
+2251,Wang 2023,10.1016/j.landurbplan.2022.104568,United States,Diagnosis,Mental disorder
+2928,Perez-Del-Pulgar 2021,10.1016/j.envres.2021.111326,Spain,Diagnosis,Mental disorder; behavioral disorder
+3904,Watkins-Martin 2022,10.1016/j.jad.2022.08.121,Canada,Diagnosis,Mental disorder
+5262,Zhang 2022,10.3390/ijerph192416634,China,Diagnosis,Mental disorder
+2327,Reuben 2020,10.1016/j.ypmed.2020.106265,United States,Diagnosis by professionals,Anxiety; Depression; Psychotic disorders; ADHD
+216,Triguero-Mas 2015,10.1016/j.envint.2015.01.012,Spain,Diagnosis; GHQ-12; intake of medication,Mental wellbeing ; Mental disorder; Psychotic disorders
+2117,Jiang 2019,10.1177/0013916518788603,United States,"Digit Span Forward test, Digit Span Backward test",Attention
+26,Tost 2019,10.1038/s41593-019-0451-y,Germany,EEG,Psychotic disorders
+591,Herman 2021,10.3390/su13042212,Poland,EEG,Emotional wellbeing
+2803,Lee 2021,10.1080/03623319.2021.1960044,United States,EEG,psychological state
+7519,Park 2008,10.1080/02827580802055978,Japan,EEG,relaxation
+7556,Song 2020,10.3390/su12166601,Japan,EEG,Psychotic disorders
+143,Olszewska-Guizzo 2020,10.3390/ijerph17020394,Singapore,EEG,Depression; Mood
+635,Olszewska-Guizzo 2021,10.3390/ijerph18116118,Singapore,EEG,Mental disorder
+284,Maes 2021,10.1038/s41893-021-00751-1,UK,EF; SDQ; KIDSCREEN-10,Mental wellbeing ; Cognitive functioning
+3522,Johansson 2011,10.1111/j.1758-0854.2011.01051.x,Sweden,EFI; NMS; SST,Affect; Mood; Attention
+541,Mennis 2018,10.1016/j.landurbplan.2018.02.008,United States,EMA,Stress
+624,Henson 2020,10.1371/journal.pone.0238498,United States,EMA,Anxiety; Depression; Psychotic disorders
+3434,South 2021,10.1007/s11524-021-00544-z,United States,EPDS,Depression
+487,Zhou 2022,10.1016/j.ufug.2022.127612,China,EQ5D,Restorative effect
+5026,Nawrath 2022,10.3390/environments9120148,Nepal,EQ5D-3L; PHQ,Quality of life;; depressive disorder
+3147,Olsen 2019,10.1016/j.socscimed.2019.03.009,Multiple regions,EUA,Life satisfaction
+2451,Camargo 2017,10.3390/ijerph14101250,Colombia,EUROHIS-QOL-8 items,Anxiety; Depression; Quality of life;
+443,Lee 2023,10.1016/j.landurbplan.2022.104606,United States,Emergency Medical Services,Suicide
+2215,MacKerron 2013,10.1016/j.gloenvcha.2013.03.010,UK,Experience Sampling Method,Mental wellbeing ; Happiness
+765,Tsai 2018,10.3390/ijerph15020340,United States,FMD,Mental wellbeing
+772,Bu 2022,10.1016/j.healthplace.2022.102897,UK,GAD-7,Anxiety
+20,Li 2022,10.3390/land11081128,China,GAD-7; PHQ,Anxiety; Depression
+920,Lu 2021,10.1093/geronb/gbab037,China,GDS,Depression
+3464,Nishigaki 2020,10.3390/ijerph17249276,Japan,GDS,Depression
+533,Wu 2021,10.1016/j.buildenv.2020.107477,China,GDS-15,Depression
+1943,Zhao 2022,10.1080/02614367.2022.2094994,China,GDS-15; GAI,Anxiety; Depression
+12,White 2013,10.1177/0956797612464659,UK,GHQ,Mental distress; Life satisfaction
+68,Alcock 2015,10.1016/j.landurbplan.2015.05.008,UK,GHQ-12,Mental wellbeing
+69,Alcock 2014,10.1021/es403688w,UK,GHQ-12,Mental wellbeing
+82,Zhang 2021,10.1016/j.landurbplan.2021.104131,Singapore,GHQ-12,Mental distress
+83,Zhang 2019,10.3390/ijerph16040578,Singapore,GHQ-12,Mental distress
+102,Qiao 2021,10.3389/fpubh.2021.561809,China,GHQ-12,Mental wellbeing
+107,Dzhambov 2018,10.1016/j.envres.2018.06.004,Bulgaria,GHQ-12,Mental wellbeing
+121,Astell-Burt 2014,10.1136/jech-2013-203767,UK,GHQ-12,Mental disorder
+199,Zhang 2022,10.1016/j.landurbplan.2022.104503,Singapore,GHQ-12,Mental distress
+317,Dzhambov 2018,10.2478/aiht-2018-69-3166,Bulgaria,GHQ-12,Mental wellbeing
+504,Dzhambov 2018,10.1016/j.envres.2017.09.015,Bulgaria,GHQ-12,Mental wellbeing
+510,Pasanen 2019,10.1016/j.envint.2019.105016,UK,GHQ-12,Mental wellbeing
+514,vandenBerg 2010,10.1016/j.socscimed.2010.01.002,Netherlands,GHQ-12,Mental wellbeing
+764,Barreto 2019,10.11606/s1518-8787.2019053001008,Brazil,GHQ-12,Mental disorder
+818,Qiu 2019,10.3390/ijerph16173206,China,GHQ-12,Mental wellbeing
+840,Su 2019,10.1016/j.envint.2019.02.008,Spain,GHQ-12,Mental distress
+1825,Subiza-Perez 2021,10.1016/j.envres.2021.111192,Spain,GHQ-12,Mental wellbeing
+2228,Soga 2017,10.3390/ijerph14010071,Japan,GHQ-12,Mental wellbeing ; Eating disorders
+2955,Subiza-Perez 2023,10.1016/j.landurbplan.2022.104612,Spain,GHQ-12,Mental distress
+3082,Zhang 2022,10.1016/j.envres.2021.111795,China,GHQ-12,Mental distress
+8077,Dadvand 2016,10.1016/j.envint.2016.02.029,Spain,GHQ-12,Mental wellbeing
+8080,deVries 2003,10.1068/a35111,Netherlands,GHQ-12,Mental disorder
+621,Garrett 2019,10.1016/j.healthplace.2019.102200,UK,GHQ-12; EQ5D,Mental disorder; Anxiety; Depression
+984,White 2013,10.1016/j.healthplace.2013.05.006,UK,GHQ-12; Global Life Satisfaction question,Mental distress; Life satisfaction
+1971,Knight 2022,10.1016/j.landurbplan.2022.104510,UK,GHQ-12; Official MH survey,Mental wellbeing ; Life satisfaction
+2005,Zayas-Costa 2021,10.3390/ijerph18179314,Spain,GHQ-12; Official MH survey,Mental wellbeing ; Anxiety; Depression
+130,Nieuwenhuijsen 2022,10.1016/j.envres.2022.114387,Spain,GHQ-12; use of tranquilizer/sedatives and antidepressant; Diagnosis,Mental wellbeing
+387,Ribeiro 2021,10.1016/j.envint.2021.106664,Spain; Portugal,GHQ-12;4DSQ,Mental distress; Somatization
+968,Rakhshani 2019,10.32598/sija.13.10.460,Iran,GHQ-28,Anxiety; Depression; Mental health
+909,Pretty 2007,10.1080/09640560601156466,UK,GHQ; RSE; POMS,Anxiety; Depression; Mood; Anger-hostility; Confusion-bewilderment; Fatigue-inertia; Vigor-activity
+2289,Zhang 2022,10.1016/j.healthplace.2022.102924,Denmark,Galvanic skin response,Physiological stress
+273,Brace 2020,10.3390/ijerph17197014,Spain,HADS,Anxiety; Depression
+722,Piccininni 2018,10.1016/j.ypmed.2018.04.020,Canada,HBSC,Mental wellbeing
+8076,Turunen 2023,10.1136/oemed-2022-108491,Finland,HCREHS,Psychotic disorders
+415,Sharifi 2021,10.1016/j.scs.2021.103244,Australia,HILDA,subjective well-being
+32,Xu 2021,10.1016/j.ssmph.2021.100790,China,Health Questionnaire of Urban Residents in China,Mental wellbeing
+2457,South 2015,10.2105/ajph.2014.302526,United States,Heart Rate,Physiological stress
+7072,Chang 2019,10.3390/ijerph16081415,China,ICD-9 codes,Psychotic disorders
+789,Jato-Espino 2022,10.1016/j.ufug.2021.127457,Spain,IDEZAr,Emotional wellbeing; life condition
+2302,Generaal 2019,10.1017/s0033291718000612,Netherlands,IDS; BAI; FQ,Anxiety; Depression; fear
+2626,Triguero-Mas 2020,10.5888/pcd17.200087,Spain,INTEGRAL,quality of life
+104,Hoj 2021,10.1016/j.healthplace.2020.102501,Australia,K10,Stress
+212,Wang 2020,10.15302/j-laf-0-020009,China,K10,Mental wellbeing
+234,Astell-Burt 2019,10.1001/jamanetworkopen.2019.8209,Australia,K10,Mental distress
+236,Feng 2022,10.1007/s00127-022-02266-2,Australia,K10,Mental distress
+792,Nutsford 2016,10.1016/j.healthplace.2016.03.002,New Zealand,K10,Mental distress
+2114,Lu 2021,10.3390/land10040339,China,K10,Mental wellbeing
+6,Feng 2018,10.1186/s12888-018-1926-1,Australia,K6,Psychotic disorders
+22,Ha 2022,10.1016/j.landurbplan.2021.104309,United States,K6,distress
+2831,Roe 2011,10.1016/j.ufug.2011.03.003,Scotland,MACL;,Cognitive functioning; Mood; Restorative effect
+2347,Fleury‐Bahi 2022,10.1111/aphw.12390,Spain; Netherlands; Turkey; Portugal; Germany; France; Hungary,MHC-SF,Mental wellbeing
+2542,Chou 2021,10.3390/su132011370,Taiwan,MHC-SF,Mental wellbeing ; Cognitive functioning; Restorative effect
+96,Oswald 2021,10.3390/ijerph18115630,Australia,MHC-SF; K10,Mental wellbeing ; Mental disorder
+25,Zhang 2015,10.3390/ijerph121114342,Netherlands,MHI-5,Mental wellbeing
+38,Wang 2022,10.1016/j.ufug.2022.127784,China,MHI-5,Depression
+88,Noordzij 2020,10.1136/jech-2019-212704,Netherlands,MHI-5,Mental wellbeing
+330,Grilli 2020,10.1016/j.landurbplan.2020.103814,Ireland,MHI-5,Mental wellbeing
+412,Ruijsbroek 2017,10.1007/s00038-017-0963-8,Spain; UK; The Netherlands; Lithuania,MHI-5,Mental wellbeing
+650,Bloemsma 2022,10.1016/j.envint.2022.107197,Netherlands,MHI-5,Mental wellbeing
+677,Ruijsbroek 2017,10.3390/ijerph14060618,Spain; Lithuania; The Netherlands; UK,MHI-5,Mental wellbeing
+981,Kruize 2020,10.1016/j.envint.2019.105173,"Spain, UK, Netherlands, Lithuania",MHI-5,Mental wellbeing
+2039,Sturm 2014,NA,United States,MHI-5,Mental distress
+2192,Liu 2021,10.1016/j.jclepro.2021.127100,China,MHI-5; Official MH survey,Affect; Depression; Life satisfaction; worthwhileness
+2646,Liu 2022,10.1016/j.landurbplan.2022.104397,China,MHI-5; Official MH survey,Mental disorder; Depression; Life satisfaction; life worthwhileness
+492,Mukherjee 2017,10.1016/j.healthplace.2017.07.004,India,MINI,Depression
+3145,Bollenbach 2022,10.3389/fpsyg.2022.970336,Germany,MMQ,Affect
+386,Astell-Burt 2022,10.1016/j.socscimed.2021.114503,Australia,Medicare Benefits Schedule and Pharmaceutical Benefits Scheme,antidepressants prescribing; mental healthcare costs
+2645,Chi 2022,10.1289/ehp9924,Belgium,Medication Sales for Mood Disorders,Psychotic disorders
+7,Engemann 2019,10.1073/pnas.1807504116,Danmark,Mental disorder,Psychotic disorders
+1898,Abdullah 2022,10.2196/34782,Canada,Mental health disorder data,Psychotic disorders
+279,Noordzij 2021,10.1136/jech-2020-214257,Multiple regions,Mindmap project,Depression; subjective health
+3189,Liao 2020,10.1177/1471301218793319,United States,Mini Mental State Exam,Cognitive functioning
+3577,Yi 2021,10.3390/ijerph18063004,South Korea,MoCA; GDS; EQ5D,Cognitive functioning; Depression; Quality of life;
+3340,Greenwood 2016,10.1016/j.jenvp.2016.09.007,UK,NCPCT; ZIPERS,Mood; Attention
+3963,Frash 2016,10.18666/jpra-2016-v34-i1-6801,United States,OHI,Happiness
+2346,Kardan 2015,10.1038/srep11610,Canada,OHS,Anxiety; Depression; Substance use disorders
+507,Jiang 2022,10.1016/j.ufug.2022.127510,China,ONS,Life satisfaction
+3258,Houlden 2021,10.1177/2399808319887395,UK,ONS,Happiness; Life satisfaction; Worth
+786,Lee 2022,10.1016/j.cities.2022.103768,South Korea,Official MH survey,Happiness
+2019,White 2013,10.1016/j.jenvp.2013.04.002,UK,Official MH survey,Restorative effect
+2040,Shanahan 2016,10.1038/srep28551,Australia,Official MH survey,Depression; high blood pressure; social cohesion
+2119,Liao 2022,10.3390/ijerph192013353,China,Official MH survey,Mental wellbeing
+2172,Abdullah 2021,10.3390/ijerph18094713,Canada,Official MH survey,Mental disorder; Psychotic disorders
+2701,Tarar 2015,10.21273/horttech.25.1.76,United States,Official MH survey,Stress
+2766,Browning 2018,10.3390/ijerph15071541,United States,Official MH survey,Mental wellbeing
+2785,Kim 2018,10.1016/j.landurbplan.2018.05.010,South Korea,Official MH survey,Happiness
+2896,White 2017,10.1016/j.healthplace.2017.03.008,UK,Official MH survey,Mental wellbeing
+616,Reeves 2019,10.3389/fpsyg.2019.01840,UK,PANAS,Anxiety; Depression; Mood; Stress
+2169,Larson 2022,10.1016/j.envres.2021.112367,United States,PANAS,Emotional wellbeing
+3154,Legrand 2022,10.3389/fnbeh.2022.901491,France,PANAS,Affect
+3485,Zhang 2022,10.1080/10549811.2022.2123825,China,PANAS,Affect
+3544,Dopko 2019,10.1016/j.jenvp.2019.05.002,Canada,PANAS,Mood
+3541,Berman 2008,10.1111/j.1467-9280.2008.02225.x,United States,PANAS; Digit Span,Cognitive functioning; Mood; Attention
+2867,Brooks 2017,10.1016/j.jenvp.2017.10.004,Canada,PANAS; EES; DASS-21,Affect; Anxiety; Depression; Mood; Stress; eudaimonia
+2037,Li 2021,10.3390/ijerph18010090,China,PANAS; POMS; PRS; ROS,Emotional wellbeing; Mood; Restorative effect
+6274,Bielinis 2018,10.1016/j.ufug.2017.12.006,Poland,PANAS; POMS; ROS; SVS,Affect; Mood; Restorative effect; vitality
+1969,Nghiem 2021,10.1016/j.ufug.2021.127030,Singapore,PANAS; PRS,Mental wellbeing ; Affect; Restorative effect
+329,Saw 2015,10.1371/journal.pone.0133781,Singapore,PANAS; Satisfaction with Life Scale; Ten-Item Personality Inventory,Mental wellbeing ; Affect; Happiness; Life satisfaction
+2998,Saadi 2020,10.1016/j.envres.2020.109687,Israel,PANAS; backwards Digit Span,Mood; Working memory
+2186,Duan 2022,10.3390/ijerph19020721,China,PANAS; biofeedback device,Affect; Stress
+394,Chang 2020,10.1016/j.ufug.2020.126606,China,PERMA,Mental wellbeing
+811,Toselli 2022,10.3390/ijerph19042130,Italy,PGWB-S,Mental wellbeing
+2093,Toselli 2022,10.3390/ijerph19106028,Italy,PGWB-S,Mental wellbeing ; Anxiety; Mood; vitality
+499,Hubbard 2021,10.3390/ijerph18083869,UK,PHQ,distress
+2246,Sarkar 2018,10.1016/s2542-5196(18)30051-2,UK,PHQ,Depression
+2264,Helbich 2020,10.1007/s00127-019-01808-5,Netherlands,PHQ,Depression
+1954,Helbich 2021,10.1016/j.landurbplan.2021.104181,Netherlands,PHQ; GAD-7,Anxiety; Depression
+2132,Dzhambov 2021,10.1016/j.envres.2020.110420,Bulgaria,PHQ; GAD-7,Anxiety; Depression
+540,Cohen-Cline 2015,10.1136/jech-2014-204667,United States,PHQ; PSS; BSI,Anxiety; Depression; Stress
+74,Kanelli 2021,10.3390/su13137322,Greece,POMS,Mood
+393,Tsunetsugu 2013,10.1016/j.landurbplan.2013.01.014,Japan,POMS,Mood
+2426,Lyu 2019,10.1080/13416979.2018.1538492,China,POMS,Anxiety; Depression; Mood; Self-esteem; fatigue; hostility; vigor
+2489,Olszewska-Guizzo 2022,10.3389/fpsyt.2022.757056,Singapore,POMS,Mood
+2745,Ibes 2022,10.1080/07448481.2020.1726926,United States,POMS,Mood
+3146,McEwan 2022,10.3390/ijerph192315594,UK,POMS,Anxiety
+3655,Ochiai 2015,10.3390/ijerph121214984,Japan,POMS,Anxiety; Mood; fatigue; vigor
+3863,Yoshida 2015,10.1016/j.uclim.2015.09.004,Japan,POMS,Anxiety; Depression; anger-hostility; vigor; fatigue; confusion
+4004,Triguero-Mas 2017,10.1371/journal.pone.0172200,Spain,POMS,Mood
+5878,Li 2022,10.1265/ehpm.22-00136,Japan,POMS,Mood; fatigue; vigor
+6523,Park 2011,10.1016/j.landurbplan.2011.03.005,Japan,POMS,Mental distress; Anxiety; Depression; Mood; Anger-hostility; Vigor; Confusion; Fatigue
+7315,Joung 2015,10.3390/ijerph120707235,South Korea,POMS,Anxiety; Depression; Mood; Anger; hostility; Vigor; Fatigue; Confusion
+7432,Kobayashi 2021,10.1016/j.ufug.2020.126920,Japan,POMS,Mood
+7446,Lyu 2019,10.3390/ijerph16244991,China,POMS,Anxiety; Depression; Mood; anger and hostility; fatigue; confusion; vigor; total mood disturbance
+2877,Li 2018,10.1016/j.landurbplan.2018.01.009,United States,POMS-Y,Anxiety; Depression; Mood; Tension; Anger; Fatigue; Vigor
+3927,Deng 2020,10.1016/j.ufug.2019.126488,China,POMS; LPRS,Mood; Restorative effect
+151,Mokhtar 2018,NA,Malaysia,POMS; PANAS; ROS,Affect; Mood; Restorative effect
+3057,Janeczko 2020,10.3390/f11050591,Poland,POMS; PANAS; ROS; SVS,Affect; Depression; Mood; Restorative effect; Vitality; Tension; Anger; Fatigue; Confusion; Vigor
+3220,Korcz 2021,10.3390/f12080993,Poland,POMS; PANAS; ROS; SVS,Affect; Mood; Restorative effect; vitality; confusion; fatigue; anger; anxiety; vigor
+3476,Takayama 2014,10.3390/ijerph110707207,Japan,POMS; PANAS; ROS; SVS,Affect; Mood; Restorative effect; Vitality
+6666,Bielinis 2019,10.3390/f10010034,Poland,POMS; PANAS; ROS; SVS,Mental distress; Affect; Anxiety; Depression; Mood; Restorative effect; anger/hostility; vigor; fatigue; confusion; vitality
+6750,Bielinis 2019,10.3390/f10100827,Poland,POMS; PANAS; ROS; SVS,Mental distress; Mood; Restorative effect
+3469,Stigsdotter 2017,10.1016/j.healthplace.2017.05.007,Denmark,POMS; PRS; PSS,Anxiety; Depression; Mood; Restorative effect; Stress; Anger-Hostility; Vigor; Fatigue; Confusion
+8086,Yin 2023,10.1016/j.ufug.2023.128066,China,POMS; RCS,Restorative effect
+512,Kabisch 2021,10.1016/j.landurbplan.2020.103998,Germany,POMS; ROS,Mood; Restorative effect
+794,Wu 2022,10.3390/ijerph19063453,China,POMS; ROS,Anxiety; Depression; Mood; Restorative effect; Self-esteem; anger-hostility; vitality; fatigue; confusion
+1910,Liu 2021,10.3390/f12101391,China,POMS; ROS; SVS; WEMWBS,Mental wellbeing ; Anxiety; Depression; Mood; Restorative effect; vitality; anger–hostility; fatigue; confusion
+854,Elsadek 2020,10.1016/j.ufug.2020.126846,China,POMS; SD,Emotional wellbeing; Mood
+4199,Park 2017,10.3390/ijerph14091087,South Korea,POMS; SD,Emotional wellbeing; Mood
+3139,Han 2021,10.3390/su13052686,China,POMS; SSF; DSB,Anxiety; Depression; Emotional wellbeing; Mood; Self-esteem; Attention; Vigour; Confusion; Fatigue; Anger
+240,Song 2015,10.3390/ijerph121114216,Japan,POMS; STAI,Anxiety; Depression; Mood
+261,Song 2014,10.1186/1880-6805-33-8,Japan,POMS; STAI,Anxiety; Depression; Mood; vigor; fatigue; confusion; anger-hostility
+608,Xiang 2022,10.3390/ijerph191710760,Japan,POMS; STAI,Anxiety; Depression; Mood; anger-hostility; vigor-activity
+615,Song 2013,10.1186/1880-6805-32-18,Japan,POMS; STAI,Anxiety; Depression; Mood; anger-hostility; vigor; fatigue; confusion
+3869,Pratiwi 2019,10.3390/ijerph16214279,Japan,POMS; STAI,Anxiety; Depression; Mood; Anger-hostility; Confusion-bewilderment; Fatigue-inertia; Vigor-activity
+3878,Pratiwi 2020,10.3390/su12104003,Japan,POMS; STAI,Anxiety; Depression; Mood; anger-hostility; fatigue-inertia; confusion-bewilderment; vigor-activity
+5959,Yu 2017,10.3390/ijerph14080897,Taiwan,POMS; STAI,Anxiety; Depression; Mood; anger-hostility; fatigue; confusion; vigor
+7199,Song 2018,10.3390/ijerph15122804,Japan,POMS; STAI,Anxiety; Depression; Mood; anger-hostility; fatigue; confusion; vigor
+2547,Elsadek 2019,10.1016/j.ufug.2019.05.007,China,POMS; STAI-20; ROS; SVS,Anxiety; Mood; Restorative effect; Vitality
+3270,Jiaqing 2019,10.1016/j.ufug.2019.126396,United States,PQ-16,Psychosis
+2269,Han 2021,10.1016/j.ufug.2021.127306,China,PREMA,Mental wellbeing
+19,Huang 2021,10.3390/ijerph18168713,China,PRS,Restorative effect; Stress
+437,Holt 2019,10.3390/ijerph16030424,United States,PRS,Quality of life;; Stress
+835,Yang 2020,10.1016/j.ufug.2020.126763,China,PRS,Stress
+2249,Zhu 2022,10.3390/brainsci12060721,China,PRS,Restorative effect
+3964,Li 2023,10.1016/j.ufug.2022.127806,China,PRS,Restorative effect
+7049,Takayama 2019,10.3390/ijerph16081456,Japan,PRS; POMS; ROS; PANAS; SVS,Mental distress; Affect; Anxiety; Depression; Restorative effect; Vitality; anger-hostility; vigor; fatigue; confusion
+2739,Subiza-Perez 2020,10.1016/j.cities.2019.102461,Spain,PRS; ROS,Restorative effect
+2935,Subiza-Perez 2020,10.1016/j.landurbplan.2020.103926,Spain,PRS; ROS,Restorative effect
+75,Narea 2022,10.1177/21677026211068871,Chile,PSI-SF; CES-D20,Depression; Stress
+830,Ewert 2018,10.3390/bs8050049,United States,PSQ,Stress
+1950,Rezaei 2021,10.3390/su13168712,South Korea,PSQ;WHO-5;PES,Mental wellbeing ; Mood; Stress
+124,Zhao 2022,10.3390/su14010089,UK,PSS,Stress
+829,Franklin 2020,10.1001/jamanetworkopen.2020.17634,United States,PSS,Stress
+942,Feda 2015,10.1177/1420326x14535791,United States,PSS,Stress
+2480,Tiako 2021,10.1016/j.envres.2021.111620,United States,PSS,Stress
+4339,Hazer 2018,10.1016/j.landurbplan.2017.08.006,United States,PSS,Stress
+2533,Chiang 2019,10.1016/j.ufug.2018.12.011,Taiwan,PSS,Stress
+305,Reid 2022,10.1371/journal.pone.0263779,United States,PSS-4; CES-D10; MMPI-2 Anxiety,Anxiety; Depression; Stress
+468,Thompson 2019,10.3390/su11123317,UK,PSS; EQ5D,Quality of life;; Stress
+3201,Wolf 2017,10.1080/09640568.2016.1262833,United States,PSS; ROPELOC,Stress
+1914,Koay 2020,10.3390/ijerph17186740,Singapore,PSS; RSE,Self-esteem; Stress
+876,Chalmin-Pui 2021,10.1016/j.landurbplan.2020.103958,UK,PSS; SWEMWB,Stress; subjective well-being
+227,Thompson 2016,10.3390/ijerph13040440,UK,PSS; WEMWBS,Mental wellbeing ; Stress
+465,Roe 2013,10.3390/ijerph10094086,UK,PSS; WEMWBS,Mental wellbeing ; Stress
+999,Thompson 2012,10.1016/j.landurbplan.2011.12.015,UK,PSS; WEMWBS,Mental wellbeing ; Stress
+3877,Lopes 2020,10.1016/j.jenvp.2020.101489,Portugal,PTQ; BRSI; PANAS,Affect; Mood; rumination
+3825,Lee 2022,10.3390/ijerph19020708,South Korea,PWI-SF; uBioMacpa,Stress
+3881,Mourao 2019,10.1080/13504509.2018.1469550,Portugal,PWI; SHS,Happiness; Life satisfaction
+2653,Tillmann 2018,10.3390/ijerph15061072,Canada,PedsQL,Quality of life;
+658,Sen 2021,10.1016/j.ecolind.2021.107338,India,Questionnaire,Stress
+2447,Pazhouhanfar 2018,10.1007/s12646-017-0434-6,Iran,Questionnaire,Mood
+525,Picavet 2016,10.1016/j.ypmed.2016.04.021,Netherlands,RAND36; CES-D,Depression; Quality of life;
+2519,Lohmus 2021,10.3390/ijerph18063303,Sweden,RAND36; SCL-90; Stress Profile,Mental wellbeing ; Depression; Stress; Vitality
+248,Lu 2022,10.3390/ijerph19095477,Japan,ROS,Restorative effect
+812,Kondo 2020,10.1016/j.envint.2019.105237,Spain; UK; Netherlands; Lithuania,ROS,Mood; Restorative effect; fatigue
+2502,Korpela 2008,10.1016/j.healthplace.2007.10.008,Finland,ROS,Restorative effect
+3337,Colley 2017,10.1177/0013916516629194,UK,ROS,Restorative effect
+3742,Pasanen 2018,10.3389/fpsyg.2018.02057,Finland,"ROS, 2-dimensional affect grid, SART",Mood; Restorative effect; Attention
+3496,Gidlow 2016,10.1016/j.jenvp.2015.11.003,UK,ROS; POMS; Backward Digit Span,Cognitive functioning; Mood; Restorative effect
+1951,Tyrvainen 2014,10.1016/j.jenvp.2013.12.005,Finland,ROS; PRS; PANAS; SVS; CS,Mood; Restorative effect; Vitality; Creativity
+8081,Grigoletto 2023,10.1016/j.envres.2023.115397,Spain; the Netherlands; Lithuania; the United Kingdom,ROS; SF-36,Mental wellbeing ; Restorative effect
+2815,Ojala 2019,10.1016/j.healthplace.2018.11.004,Finland,ROS; SVS,Mental distress; Restorative effect
+2656,Simkin 2020,10.1016/j.ufug.2019.126567,Finland,ROS; SVS; PANAS,Emotional wellbeing; Restorative effect; vitality
+2648,Liu 2021,10.3390/ijerph182212224,China,ROS; SVS; WEMWBS,Mental wellbeing ; Restorative effect; Vitality
+2222,Bratman 2021,10.3389/fpsyg.2021.643866,United States,RRS; PANAS,Affect; Rumination
+881,Lai 2020,10.1016/j.ufug.2020.126720,UK,RS,Restorative effect
+3388,Mueller 2021,10.3389/fpsyg.2021.712065,UK,RSE,Happiness; Mood; Self-esteem; antisocial behavior
+3399,Reed 2013,10.1371/journal.pone.0069176,UK,RSE,Self-esteem
+2589,Bang 2018,10.3390/ijerph15091977,South Korea,"RSE, Children’s Depression Inventory",Depression; Self-esteem
+2313,Song 2020,10.3928/02793695-20200406-01,South Korea,RSE; CDI; PSS; Achenbach; ROS,Depression; Restorative effect; Self-esteem; Stress; Behavior problems
+2001,Soga 2021,10.1002/eap.2248,Japan,RSE; Life Satisfaction Index A; Subjective Happiness Scale; UCLA Loneliness Scale; GHQ-12,Mental disorder; Depression; Happiness; Life satisfaction; Self-esteem; Loneliness
+343,Barton 2012,10.1177/1757913910393862,UK,RSE; POMS,Mood; Self-esteem
+2332,Payne 2020,10.1155/2020/4210285,Australia,RSS; PSS; MBI-SS; SWLS,Life satisfaction; Stress; Burnout
+312,McEwan 2021,10.1080/21711976.2020.1851878,UK,ReQoL; TPAS,Affect; Recovering Quality of life;
+570,McEwan 2019,10.3390/ijerph16183373,UK,ReQoL; TPAS,Mental wellbeing ; Affect
+640,Balseviciene 2013,10.1016/j.sbspro.2014.04.462,Lithuania,S-PSI/SF; SDQ,Stress
+2471,Han 2018,10.1177/1420326x17691328,China,SAI; WBM; RS; RCS,Anxiety; Restorative effect; mental fatigue
+2747,Murphy 2022,10.1038/s41393-021-00736-z,United States,SCI-QOL,Affect; Depression
+642,Wang 2022,10.1016/j.cities.2022.103815,China,SCL-90,Anxiety; Depression
+2603,Klein 2022,10.3390/ijerph19095668,Sweden,SCL-CD6; SMBQ; Whitehall II,Depression; Life satisfaction; Burnout;
+2345,Elsadek 2019,10.1016/j.ufug.2019.126446,China,SD; POMS,Anxiety; Depression; Emotional wellbeing; anger-hostility; fatigue; confusion; vigor; TMD
+2618,Lee 2011,10.1016/j.puhe.2010.09.005,Japan,SD; POMS,Mood; subjective feeling
+6599,Ochiai 2015,10.3390/ijerph120302532,Japan,SD; POMS,Anxiety; Depression; Mood; confusion; anger-hostility; fatigue; vigor
+7534,Igarashi 2015,10.3390/ijerph120606657,Japan,SD; POMS,Mood; subjective perception
+6686,Song 2019,10.3390/f10080635,Japan,SD; POMS; STAI,Anxiety; Depression; Mood; anger-hostility; fatigue; confusion; vigor
+7390,Song 2019,10.3390/ijerph16020229,Japan,SD; POMS; STAI,Anxiety; Depression; Mood; anger-hostility; fatigue; confusion; vigor
+7613,Ohe 2017,10.1016/j.tourman.2017.04.010,Japan,SD; SSI,relaxation
+5934,Hassan 2018,10.1155/2018/9653857,China,SD; STAI,Anxiety; Mood
+2126,Adjei 2015,10.1007/s10668-014-9591-0,UK,SDHS: short depression-happiness scale,Happiness
+2052,Wang 2021,10.3389/fpsyg.2021.728826,China,SDMT; BFS,Mood; Attention
+50,Markevych 2014,10.1016/j.envint.2014.06.002,Germany,SDQ,Behavioral disorder
+723,McEachan 2018,10.1016/s2542-5196(18)30119-0,UK,SDQ,Mental wellbeing
+799,Richardson 2017,10.1016/j.envres.2017.07.038,Scotland,SDQ,Hyperactivity Problems; Emotional Problems
+988,Andrusaityte 2020,10.1016/j.ijheh.2019.09.009,Lithuania,SDQ,Mental wellbeing
+2563,Balseviciene 2014,10.3390/ijerph110706757,Lithuania,SDQ,Emotional and Behavioral disorder
+4306,Sobko 2018,10.1371/journal.pone.0207057,China,SDQ,Mental wellbeing
+455,Zewdie 2022,10.1016/j.envres.2022.114258,Ethiopia,SDQ; PHQ,Depression; Emotional wellbeing
+2309,Sia 2020,10.1038/s41598-020-74828-w,Singapore,SDS; SAS,Mental wellbeing
+198,Xie 2022,10.1016/j.ufug.2021.127419,China,SF-12,Mental wellbeing
+421,Tan 2019,10.3390/ijerph16224423,China,SF-12,Mental wellbeing
+485,Methorst 2021,10.1016/j.landurbplan.2021.104084,Germany,SF-12,Mental wellbeing
+574,Kwok 2021,10.3389/fpubh.2021.740102,China,SF-12,Mental wellbeing ; Quality of life;
+670,Engemann 2021,10.1016/j.healthplace.2021.102678,Denmark,SF-12,Mental wellbeing
+692,Volker 2018,10.1016/j.ufug.2017.10.014,Germany,SF-12,Mental wellbeing
+867,Guo 2021,10.1016/j.landurbplan.2021.104058,China,SF-12,Mental wellbeing
+1984,Wang 2020,10.1088/1755-1315/569/1/012073,China,SF-12,Mental wellbeing
+2809,Jiang 2020,10.3390/ijerph17113965,United States,SF-12; PSS,Mental wellbeing ; Stress
+3091,Young 2022,10.1016/j.ufug.2022.127708,Switzerland,SF-12; SF-36,Mental wellbeing ; Emotional wellbeing
+2121,Aliyas 2021,10.1080/09603123.2019.1681379,Iran,SF-20,Mental wellbeing
+72,Richardson 2013,10.1016/j.puhe.2013.01.004,New Zealand,SF-36,Mental wellbeing
+191,Carter 2014,10.1007/s10393-014-0952-9,Australia,SF-36,Mental wellbeing
+274,vandenBerg 2016,10.1016/j.healthplace.2016.01.003,Spain; the Netherlands; Lithuania; UK,SF-36,Mental wellbeing ; vitality
+423,vandenBerg 2017,10.1016/j.ufug.2017.04.010,"Spain, Lithuania, the Netherlands, UK",SF-36,Mental wellbeing
+537,vandenBerg 2019,10.1177/0013916517738563,"Spain, Lithuania, the Netherlands, UK",SF-36,Mental wellbeing ; Vitality
+780,Poortinga 2021,10.1016/j.landurbplan.2021.104092,UK,SF-36,subjective wellbeing
+997,Zijlema 2018,10.1016/j.envint.2018.10.002,Spain; the Netherlands; Lithuania; the United Kingdom,SF-36,Mental wellbeing
+2151,Guite 2006,10.1016/j.puhe.2006.10.005,UK,SF-36,Mental wellbeing
+2409,Bjork 2008,10.1136/jech.2007.062414,Sweden,SF-36,Mental wellbeing ; Life satisfaction
+2422,Chen 2020,10.1016/j.healthplace.2020.102348,China,SF-36,Mental wellbeing
+6827,Chen 2022,10.3390/ijerph192316342,China,SF-36,Mental wellbeing
+865,Preuss 2019,10.3390/ijerph16101809,Spain; the Netherlands; Lithuania; UK,SF-36,Mental wellbeing in general
+481,Triguero-Mas 2017,10.1016/j.envres.2017.08.048,Spain; United Kingdom; Netherlands; Lithuania,SF-36; 4DSQ,Mental wellbeing ; Psychotic disorders ; vitality
+2538,Ambrey 2016,10.1016/j.puhe.2015.11.013,Australia,SF-36; K10,Mental wellbeing ; Mental distress
+3040,Ambrey 2016,10.1016/j.ufug.2016.06.020,Australia,SF-36; K10,Mental wellbeing ; Mental distress; Life satisfaction
+639,Dzhambov 2014,10.1016/j.ufug.2014.05.006,Bulgaria,SHAI-14,Anxiety
+3556,Cui 2021,10.1080/00223980.2021.1972919,China,SHS,Happiness
+801,Honold 2012,10.1016/j.jenvp.2012.05.002,Germany,SLS; BSI,Life satisfaction; Psychological symptoms
+2899,Sonntag-Ostrom 2015,10.1080/02827581.2015.1046482,Sweden,SMBQ; PSQ; CIS; SCQ; HAD-S,Anxiety; Depression; Self-esteem; Stress; burnout; fatigue
+2138,Nordbo 2020,10.1016/j.healthplace.2020.102360,Norway,SMFQ,Mental wellbeing
+80,Hong 2019,10.3390/su11154189,South Korea,SPANE; SWLS,Affect; Life satisfaction
+497,Guo 2022,10.3390/land11112017,China,SRRS,Mental wellbeing
+2030,Beil 2013,10.3390/ijerph10041250,United States,SSS; PSS; PRS,Stress
+1932,Flowers 2022,10.1016/j.ufug.2022.127587,Australia,STAI,Anxiety
+5868,Muro 2022,10.1080/13416979.2021.1996516,Spain,STAI; PANAS; POMS; SMS,Affect; Anxiety; Mood; State Mindfulness
+3115,Bratman 2015,10.1016/j.landurbplan.2015.02.005,United States,STAI; RRQ; PANAS; OSPAN; ANT; Change detection task,Affect; Cognitive functioning
+6787,Shin 2013,10.1080/02827581.2012.706634,South Korea,STAI; RSE; HI-K,Anxiety; Happiness; Self-esteem
+3915,Mintz 2021,10.1016/j.jenvp.2021.101714,Israel,STAI;PANAS,Affect; Anxiety; Stress
+887,He 2022,10.1016/j.cities.2022.103607,China,SWLS,Life satisfaction
+8085,Yang 2023,10.1016/j.landurbplan.2022.104660,China,SWLS,subjective well-being
+1926,Liu 2021,10.1016/j.ufug.2021.127027,China,SWLS; PANAS,Affect; Life satisfaction
+2917,Korpela 2018,10.3389/fpsyg.2018.00562,Multiple regions,SWLS; RANDHS-36,Emotional wellbeing; Life satisfaction
+4029,Harding 2022,10.3390/land11040492,Indonesia,SWLS; SPANE,Emotional wellbeing; Life satisfaction
+2068,IOP 2018,10.1088/1755-1315/158/1/012007,Indonasia,SWM,Happiness; subjective well-being
+4033,Sia 2022,10.1016/j.ufug.2021.127448,Singapore,SYRSS,mental resilience
+3909,Hunter 2019,10.3389/fpsyg.2019.00722,United States,Salivary cortisol,Physiological stress
+3432,Souter-Brown 2021,10.1016/j.landurbplan.2020.103997,New Zealand,Salivary cortisol; Flourishing Scale; SPANE,Mental wellbeing ; Stress
+2858,Chang 2020,10.1016/j.landurbplan.2020.103874,Singapore,Satisfaction with Life Scale,Mental wellbeing ; Life satisfaction
+2681,Cheng 2021,10.1016/j.landurbplan.2021.104118,China,Sentiment analysis,Emotional wellbeing; Happiness
+89,Home 2012,10.1080/01490400.2012.687644,Switzerland,Shin et al.'s psychosocial outcomes scale,Mental wellbeing
+2683,Li 2021,10.3390/healthcare9070918,China,Short Adjective Check List; STAI-6,Anxiety; Stress
+60,Lin 2019,10.1016/j.landurbplan.2019.103637,China,Stroop colour task; POMS,Mood; Attention
+2517,Daniels 2022,10.1016/j.ijheh.2021.113884,Belgium,Stroop test; Continuous Performance test; Digit Span Test; Digit Symbol test; Pattern Comparison test; BAT; Cortisol blood test; continuous stress measurements,Cognitive functioning; Stress
+717,Bijnens 2022,10.1016/j.envint.2021.107016,Belgium,Stroop test; Continuous Performance; Digit Span; Digit-Symbol; Pattern Comparison; SDQ,Cognitive functioning; Behavioral development
+2505,Herrera 2018,10.1136/bmjopen-2018-021599,Germany,TICS,Stress
+4014,HULL 1995,10.1080/01490409509513239,United States,TMOM; SDH,Mood; Stress
+3240,Glasgow 2019,10.1016/j.jenvp.2019.101345,United States,TMS,Mood
+2934,Amicone 2018,10.3389/fpsyg.2018.01579,Italy,The Bells test; WISC-IV; BIA go-no-go test; PRS,Cognitive functioning; Restorative effect
+3707,Shin 2011,10.1080/02827581.2011.585996,South Korea,TrailB; POMS,Mental distress; Anxiety; Cognitive functioning; Depression; Mood; Anger-hostility; Vigor-activity; Fatigue-inertia; Confusion-bewilderment
+3173,Tesler 2018,10.3390/ijerph15102134,Israel,UFHIP,Mental wellbeing ; Life satisfaction; Substance use disorders
+557,Li 2019,10.1016/j.landurbplan.2019.103605,China,VAS,Affect; Anxiety; Depression
+617,Kang 2022,10.3389/fpsyg.2022.816417,China,VAS,Stress
+2907,Li 2016,10.1016/j.landurbplan.2015.12.015,United States,VAS; Digit Span Forward; Digit Span Backward,Stress; Attention
+832,Chang 2021,10.1016/j.neuroimage.2020.117555,China,Visual Analogue Scale,Stress
+14,Wood 2017,10.1016/j.healthplace.2017.09.002,Australia,WEMWBS,Mental wellbeing
+59,Huerta 2021,10.1016/j.healthplace.2021.102606,Mexico,WEMWBS,subjective well-being
+62,Coldwell 2018,10.1016/j.landurbplan.2018.02.007,UK,WEMWBS,Mental wellbeing
+364,Qin 2021,10.1016/j.cities.2020.103039,China,WEMWBS,Mental wellbeing
+572,Zhu 2021,10.1016/j.landurbplan.2021.104128,China,WEMWBS,Mental wellbeing
+651,Houlden 2017,10.1186/s12889-017-4401-x,UK,WEMWBS,Mental wellbeing
+852,Hunter 2021,10.1186/s12966-021-01213-9,UK,WEMWBS,Mental wellbeing
+2225,Wan 2022,10.3390/ijerph19084501,China,WEMWBS,Mental wellbeing
+2273,Gilchrist 2015,10.1016/j.landurbplan.2015.02.004,UK,WEMWBS,Mental wellbeing
+2615,McFarland 2017,10.21273/horttech03566-16,United States,WEMWBS,Mental wellbeing
+3327,Tharrey 2020,10.1186/s12889-020-09836-6,France,WEMWBS,Mental wellbeing
+187,Bergou 2022,10.1371/journal.pone.0271306,UK,WEMWBS,Mental wellbeing; Emotions
+163,Jabbar 2022,10.1080/10106049.2022.2087757,Pakistan,WEMWBS; CRWS,Mental wellbeing
+2184,Afentou 2022,10.3390/ijerph192113809,UK,WEMWBS; LS,Mental wellbeing
+388,Roe 2020,10.3389/fpubh.2020.575946,United States,WEMWBS; MACL; SRT,Mental wellbeing ; Cognitive functioning; Mood
+1968,Marselle 2013,10.3390/ijerph10115603,UK,WEMWBS; MDI; PSS; PANAS,Mental wellbeing ; Affect; Depression; Stress
+694,Robinson 2021,10.3390/ijerph18052227,UK,WEMWBS; PSS,Mental wellbeing ; Stress
+973,Chalmin-Pui 2021,10.1016/j.cities.2021.103118,UK,WEMWBS; PSS,Mental wellbeing ; Stress
+1940,Maund 2019,10.3390/ijerph16224413,UK,WEMWBS; PSS; GAD; PANAS,Mental wellbeing ; Affect; Anxiety; Stress
+100,Coventry 2019,10.3390/ijerph16152712,UK,WEMWBS; UWIST-MACL;,Mental wellbeing ; Mood
+846,Wang 2019,10.1016/j.envres.2019.108535,China,WHO-5,Mental wellbeing
+974,Garrett 2019,10.1016/j.healthplace.2018.11.003,China,WHO-5,Subjective wellbeing
+979,Zhang 2021,10.1016/j.healthplace.2021.102655,China,WHO-5,Mental wellbeing
+980,McDougall 2022,10.1016/j.landurbplan.2022.104446,UK,WHO-5,Mental wellbeing
+2219,Wang 2021,10.1016/j.envpol.2021.117976,China,WHO-5,Mental wellbeing
+2322,Jakstis 2021,10.3390/ijerph18189689,Germany,WHO-5,Depression
+2366,Wang 2021,10.1016/j.landurbplan.2021.104230,China,WHO-5,Mental wellbeing
+2584,Garrido-Cumbrera 2022,10.1016/j.jenvp.2022.101864,Spain; Ireland; England,WHO-5,Mental wellbeing
+2641,Wang 2020,10.1016/j.scitotenv.2019.134843,China,WHO-5,Mental wellbeing
+2661,Taylor 2018,10.1007/s11252-017-0702-1,Australia,WHO-5,Mental wellbeing
+2699,Zhang 2020,10.3390/ijerph17238955,China,WHO-5,Mental wellbeing
+3320,Liu 2019,10.1016/j.landurbplan.2019.103602,China,WHO-5,Mental wellbeing
+2372,vandenBogerd 2021,10.1016/j.landurbplan.2021.104232,UK,WHO-5; European Social Survey,Mental wellbeing ; Life satisfaction
+2783,Vert 2020,10.1016/j.envres.2020.109812,Spain,WHO-5; POMS; 4DSQ; SF-36,Mental wellbeing ; Mental distress; Affect; Anxiety; Depression; Life satisfaction; vitality; Somatisation ; Fatigue; Vigour
+396,Mavoa 2019,10.1016/j.landurbplan.2019.103638,New Zealand,WHO-5; RADS-SF,Depression; Emotional wellbeing
+747,White 2021,10.1038/s41598-021-87675-0,"Bulgaria, Czech Republic, Estonia, Finland, France, Germany, Greece, Ireland, Italy, Netherlands, Portugal, Spain, Sweden, United Kingdom, USA, Canada, China, Australia",WHO-5; doctor-prescribed medication,Mental wellbeing ; Mental distress; Anxiety; Depression
+506,Rugel 2019,10.1016/j.envres.2019.01.034,Canada,WHO-CIDI; MHC-SF; K10,Mental wellbeing ; Mental distress; Mental disorder
+966,Allard-Poesi 2022,10.1016/j.healthplace.2022.102759,France,WHOQOL-26,Mental wellbeing
+838,Chang 2020,10.3390/ijerph17228529,China,WHOQOL-BREF,Quality of life;
+1976,Zhang 2019,10.3390/ijerph16050876,China,WHOQOL-BREF,Quality of life;
+3001,Li 2020,10.1016/j.jort.2019.100260,Indonesia; South Korea; Taiwan,WHOQOL-BREF,quality of life
+589,Korn 2018,10.3390/ijerph15081751,Peru,WHOQOL-BREF; PSS; LTE-Q,Quality of life;; Stress; life events;
+2315,Joung 2022,10.3390/ijerph19159768,South Korea,WHOQOL-BREF; RES; PANAS; PRS,Affect; Emotional wellbeing; Quality of life;; Restorative effect; Self-esteem
+3762,Baceviciene 2022,10.3390/ijerph19042098,Lithuania,WHOQOL-BREF; ROC; RSI,Quality of life;; Restorative effect; Stress; Quality of life;
+3,Kwon 2021,10.1140/epjds/s13688-021-00278-7,Multiple regions,WHR,Happiness
+2099,Asta 2021,10.1016/j.envres.2020.110358,Italy,WISC-III,Cognitive functioning
+885,Moreira 2022,10.1038/s41370-021-00349-x,Brazil,World Mental Health Survey,Anxiety; Depression
+3323,Menzel 2020,10.3390/ijerph17228519,Germany,aRRS; ROS;,Affect; Restorative effect; Stress
+2028,Boll 2020,10.1016/j.envint.2020.106047,Iran,cord blood cortisol levels,Stress
+253,Wallner 2018,10.3390/ijerph15061205,Austria,d2-R test,Cognitive functioning
+661,Browning 2019,10.1016/j.ufug.2019.03.002,United States,depressive symptoms,Depression
+897,Dimitrov-Discher 2022,10.1038/s41598-022-14659-z,Germany,fMRI,Stress
+2482,Sudimac 2022,10.1038/s41380-022-01720-6,Germany,fMRI,Stress
+3055,Sudimac 2022,10.3389/fpsyg.2022.931905,Germany,fMRI,Stress
+473,Roberts 2021,10.1016/j.ufug.2021.127301,Scotland,prescriptions,Anxiety; Depression; Psychosis
+378,Engemann 2020,10.1093/schbul/sbaa058,Denmark,schizophrenia cases,Psychotic disorders
+3338,Bodin 2003,10.1016/s1469-0292(01)00038-3,Sweden,self-reported emotion and Attentional Performance,Mental wellbeing
