@@ -2,7 +2,7 @@
 
 # Meta-analysis
 
-## System requirements
+## System Requirements
 
 - R version: 4.3.2
 
@@ -10,6 +10,30 @@
 
 - No special hardware or proprietary software is required.
 
+
+## Quick Start / Installation
+Instructions for getting started quickly, especially for non-R users.
+
+* Clone the repository
+
+```
+git clone https://github.com/Yingjie4Science/nature-health-ma.git
+cd your-project
+```
+
+* Open in RStudio or R, then:
+
+```
+# Setting the Working Directory
+# This project is designed to be run directly from the project folder.
+# If you're using RStudio, opening the .Rproj file will automatically set the working directory.
+# If you are working manually, please set it first:
+setwd("/path/to/your/cloned/project")
+
+# Load environment
+install.packages("renv") # if not installed
+renv::restore()
+```
 
 ## Required R Packages
 
