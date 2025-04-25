@@ -18,6 +18,7 @@ library(tidyr)
 library(meta)
 
 library(cowplot)
+library(ggpubr)
 library(rcartocolor)
 library(RColorBrewer)
 
@@ -81,6 +82,7 @@ n_ind <- length(unique(data$ind_sub));
 ## add hline to seperate postive vs negative indicators
 p <- p +
     annotate("segment", x = -x_limit_max, xend = x_limit_max, y = 4.5, 
+             yend = 4.5,
              # colour = "gray70", 
              colour = NA, 
              size = 0.5)

@@ -35,6 +35,7 @@ library(meta)
 library(metafor) # regtest()
 library(ggplot2)
 
+source('./code/func_fix_trimfill.R')
 
 # Define fill colors for contour
 col.contour = c("gray75", "gray85", "gray95")
@@ -109,8 +110,15 @@ for (f in names(rds_list)) {
   # ========================
   # 3. Trim-and-Fill Method (Correction for Missing Studies)
   # ========================
-  trimfill_result <- trimfill(ma_smd)
+  
+  ##' --> 1. usually work
+  # trimfill_result <- meta::trimfill(ma_smd)
   # summary(trimfill_result)
+  
+  ##' --> 2. work around 
+  ##' In case the base function `trimfill()` would report error due to bersion change, 
+  ##' You can try using the following customized one to fix the potential error
+  trimfill_result <- func_fix_trimfill(ma_smd)
   
 
   # ========================

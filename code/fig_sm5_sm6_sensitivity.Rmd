@@ -14,6 +14,19 @@ output: html_document
 ### To clear your environment
 remove(list = ls())
 
+# Check and install 'dmetar' and its dependency 'MuMIn'
+if (!requireNamespace("dmetar", quietly = TRUE)) {
+  message("Installing missing packages...")
+  if (!requireNamespace("remotes", quietly = TRUE)) install.packages("remotes")
+  if (!requireNamespace("MuMIn", quietly = TRUE)) 
+    # Install an older version of MuMIn
+    install.packages("https://cran.r-project.org/src/contrib/Archive/MuMIn/MuMIn_1.43.17.tar.gz", repos = NULL, type = "source")
+  remotes::install_github("MathiasHarrer/dmetar", build_vignettes = FALSE)
+} else {
+  message("Package 'dmetar' is already installed.")
+}
+
+
 ## Load packages
 library(dplyr)
 library(stringr)
