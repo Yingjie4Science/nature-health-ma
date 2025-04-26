@@ -15,23 +15,39 @@
 Instructions for getting started quickly, especially for non-R users.
 
 * Clone the repository
-
+If you're working from your Terminal or Git Bash, you can run:
 ```
-git clone https://github.com/Yingjie4Science/nature-health-ma.git
-cd your-project
+git clone https://github.com/Yingjie4Science/nature-health-ma.git /path/to/your/target-folder
 ```
 
-* Open in RStudio or R, then:
+* Setting the Working Directory
 
+This project is designed to be run directly from the project folder.
+
+If you're using RStudio, opening the .Rproj file will automatically set the working directory.
+
+If you are working manually, please set the working directory first:
 ```
-# Setting the Working Directory
-# This project is designed to be run directly from the project folder.
-# If you're using RStudio, opening the .Rproj file will automatically set the working directory.
-# If you are working manually, please set it first:
 setwd("/path/to/your/cloned/project")
+```
 
-# Load environment
-install.packages("renv") # if not installed
+* Load project environment
+
+To set up the project environment, you can manually install all the necessary ***Required R Packages*** (see details in the next section), or
+
+Use `renv` to automatically restore the environment:
+```
+# Install renv if not already installed
+install.packages("renv")
+
+# Restore the project-specific environment
+renv::restore()
+```
+
+***Tip**: If you encounter errors restoring packages like `MASS` (base/recommended packages), 
+set the following option before running* `renv::restore()`:
+```
+options(renv.config.ignore.installed.packages = TRUE)
 renv::restore()
 ```
 
