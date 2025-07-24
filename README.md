@@ -1,6 +1,15 @@
+[![Static Badge](https://img.shields.io/badge/Nature--Cities--doi-175E54)](https://doi.org/10.1038/s44284-025-00286-y)
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=yingjie4science.nature-health-ma)
 
+
 # Meta-analysis
+
+> **Code and data for**:
+> 
+> Li, Y., Mao, Y., Mandle, L., Rydström, A., Remme, R., Lan, X., Wu, T., Song, C., Lu, Y., Nadeau, K., Meyer-Lindenberg, A., Daily, G., Guerry, A. Acute mental health benefits of urban nature. Nature Cities (2025). https://doi.org/10.1038/s44284-025-00286-y.
+>
+> Manuscript access through Stanford Digital Repository https://purl.stanford.edu/mb869ss2129
+> 
 
 ## System Requirements
 
